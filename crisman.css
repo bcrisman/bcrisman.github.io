@@ -46,6 +46,7 @@ body {font-weight: 200;
      margin-top: 0;
      font-size: 12px;
      background: #222;
+     min-width: 640px;
      padding-left: 15%;
      padding-right: 15%;
      padding-top: 5px;
@@ -67,6 +68,7 @@ body {font-weight: 200;
   padding-left: 16%;
   padding-right: 16%;
   padding-top: 50px;
+  min-width: 640px;
   padding-bottom: 50px;
   background-color: #333;
   color: #f7f7f7;
@@ -108,6 +110,7 @@ body {font-weight: 200;
 .navbar{font-size: 1rem;
 font-weight: 100;
 overflow: hidden;
+min-width: 640px;
   padding-bottom: 0;
   margin-bottom:0 ;}
 
@@ -191,44 +194,7 @@ overflow: hidden;
   text-decoration: none;
 }
 
-/* Float four columns side by side */
-.tiles {
-  margin-left: 15%;
-  margin-right: 15%;
-
-}
-.column {
-  float: left;
-  width: 31%;
-  padding: 0 10px;
-}
-
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 800px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: left;
-  background-color: #f7f7f7;
-  }
-
-  /*color for headings color: #67a9cf;*/
+/*color for headings color: #67a9cf;*/
   h1.title {font-weight: 600;
        font-style: normal;
        font-variant: small-caps;
@@ -238,39 +204,33 @@ overflow: hidden;
        font-size: 2rem;
        line-height: 1;
     }
-    .maintext2{background-color: #f7f7f7;
+
+.maintext2{background-color: #f7f7f7;
         color: #333;
+        min-width: 640px;
+        max-width: 800px;
         margin-left: 15%;
         margin-right: 15%;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 7%;
+        padding-right: 7%;
         margin-top: 50px;
         padding-top: 10px;
         padding-bottom:10px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       }
+
 .subBox{background-color: #d1e5f0;
     color: #333;
+    min-width: 640px;
+    max-width: 800px;
     margin-left: 15%;
     margin-right: 15%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 7%;
+    padding-right: 7%;
     margin-top: 50px;
     padding-top: 10px;
     padding-bottom:10px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
-.subBoxA {
-      text-align: left;
-      font-family: 'Roboto Condensed Bold', sans-serif;
-  }
-.subBoxB {
-      text-align: left;
-  }
-.subBoxA, .subBoxB {
-      display: inline-block;
-      vertical-align: middle;
-      width: 50%;
   }
 
   .input-group {
@@ -303,6 +263,7 @@ overflow: hidden;
 
 .footer {
   background-color: #333;
+  min-width: 640px;
   color: white;
   margin-top: 100px;
   margin-bottom: 0;
