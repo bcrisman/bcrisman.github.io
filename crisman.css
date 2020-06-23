@@ -1,285 +1,49 @@
-/* defining colors ------
-
-light shade: #faf8f9 (whiteish)
-light accent: #e4a552 (yellow)
-main color: #f9f2ec (backgroudn color)
-dark accent: #c36a8a (pink)
-dark shades: #dark shades
-
-dark text: #333
-light text: white
-
-https://www.w3schools.com/howto/howto_js_filter_elements.asp
-
-More old timey: ---------
-dark: 41484c
-liight background: f3e5d6
-green accent: 8d9188
-brown accent: 967f62
-dark accent: 85675a
-
-['#ca0020','#f4a582','#f7f7f7','#92c5de','#0571b0']
-
-*/
-
 @charset "UTF-8";
+html {font-size: 14px; }
 
-/* Styling Main Text */
-html {font-size: 16px; }
-
-head {background-color: #333;
-margin: 0;}
-/*styling social bezel */
-
-body {font-weight: 200;
-       width: 100%;
-       margin: 0;
-       margin-left: 0px;
-       margin-right: 0px;
-       padding-left: 0%;
-       font-family: 'Merriweather', serif;
+body {font-weight: 150;
+       font-family: 'Merriweather Sans', sans-serif;
        background-color: #f7f7f7;
-       color: #333;
-       counter-reset: sidenote-counter; }
-
-.bezel{
-     margin-top: 0;
-     font-size: 12px;
-     background: #222;
-     min-width: 640px;
-     padding-left: 15%;
-     padding-right: 15%;
-     padding-top: 5px;
-     padding-bottom: 5px;
-     color: #f7f7f7;
-     font-variant: small-caps;
-     text-decoration: none;
-     text-align: right;
-     border-bottom: 1px solid #222;
-     font-family: 'Roboto', sans-serif;}
-
-.bezel a{
-     color: #92c5de;
-     text-decoration: none;
-   }
-
-.header{
-  font-weight: 600;
-  padding-left: 16%;
-  padding-right: 16%;
-  padding-top: 50px;
-  min-width: 640px;
-  padding-bottom: 50px;
-  background-color: #333;
-  color: #f7f7f7;
-  font-size: 2.2rem;
-  border-bottom: 1px solid #222;
-}
-.header .searchButton a{
-  background-color:inherit;
-  color: #92c5de;
-  border: 1px solid  #92c5de;
-}
-.header .searchButton {
-  background-color:inherit;
-  color: #92c5de;
-  border: 1px solid  #92c5de;
-}
-
-.header a{
-     color: #f7f7f7;
-     text-decoration: none;
-   }
-
- .left {
-     text-align: left;
-     font-variant: small-caps;
-     font-family: 'Roboto Condensed Bold', sans-serif;
- }
- .right {
-    font-size: 1rem;
-    font-weight: ;
-     text-align: right;
- }
- .left, .right {
-     display: inline-block;
-     width: 50%;
- }
-
-/* Styling Navbar */
-.navbar{font-size: 1rem;
-font-weight: 100;
-overflow: hidden;
-min-width: 640px;
-  padding-bottom: 0;
-  margin-bottom:0 ;}
-
-.navbar a {
-    float: left;
-    font-size: 15px;
-    color: #f7f7f7;
-    font-variant: normal;
-    font-family: 'Merriweather', serif;
-    text-align: center;
-    padding: 14px 10px;
-    margin-bottom: 0;
-    text-decoration: none;
-  }
-
-  /* Styling dropdown Menu stuff */
-  .dropdown {
-    float: left;
-    overflow: hidden;
-    background-color: inherit;
-  }
-
-  .dropdown .dropbtn {
-    font-weight: 100;
-    font-size: 16px;
-    background-color: inherit;
-    border: none;
-    outline: none;
-    text-align: center;
-    color: #f7f7f7;
-    padding: 0px 0px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    font-style: normal;
-    text-decoration: none;
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-      padding-bottom: 0;
-      color: #f7f7f7;
-    background-color: #333;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-
-  .dropdown-content a {
-    float: none;
-    color: #f7f7f7;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .navbar a:hover, .dropdown:hover{
-    background-color: #f7f7f720;
-  }
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+       color: #333;}
 
 /* Styling Main Body Text */
 .maintext{background-color: #f7f7f7;
+  font-weight: 150;
   color: #333;
-  min-width: 640px;
-  max-width: 800px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 7%;
   padding-right: 7%;
-  margin-top: -25px;
-  padding-top: 50px;
-  padding-bottom:100px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin-bottom: 50px;
   }
 
  a{
-  color: #0571b0;
+  color: #BB3628;
   text-decoration: none;
 }
 
-/*color for headings color: #67a9cf;*/
-  h1.title {font-weight: 600;
-       font-style: normal;
-       font-variant: small-caps;
-       font-family: 'Roboto Condensed Bold', sans-serif;
-       margin-bottom: 1.5rem;
+h1 {font-style: normal;
+     font-variant: small-caps;
+     font-family: 'Merriweather Sans', sans-serif;
+     margin-bottom: 1.5rem;
+     color: #333;
+     font-size: 2rem;
+     line-height: 1;
+  }
+
+h2 {font-style: normal;
+     font-variant: small-caps;
+     font-family: 'Merriweather Sans', sans-serif;
+     margin-bottom: 1.5rem;
+     color: #333;
+     line-height: 1;
+  }
+
+h4 {font-family: 'Merriweather Sans', sans-serif;
        color: #333;
-       font-size: 2rem;
        line-height: 1;
     }
-
-.maintext2{background-color: #f7f7f7;
-        color: #333;
-        min-width: 640px;
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 7%;
-        padding-right: 7%;
-        margin-top: 50px;
-        padding-top: 10px;
-        padding-bottom:10px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      }
-
-.subBox{background-color: #d1e5f0;
-    color: #333;
-    min-width: 640px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 7%;
-    padding-right: 7%;
-    margin-top: 50px;
-    padding-top: 10px;
-    padding-bottom:10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
-
-  .input-group {
-    background: #d1e5f0;
-    color: #333;
-    padding: 0;
-    border-radius: 0;
-  }
-
-  .input-group .button {
-    margin-bottom: 0;
-    border-radius: 0 0 0 0;
-    background: #d1e5f0;
-    border: 0px solid;
-    color: #333;
-  }
-
-  .input-group-field {
-    margin-bottom: 0;
-    border-radius: 0 0 0 0;
-    background: #f7f7f7;
-    color: #333;
-  }
-    .input-group .button:hover{
-    margin-bottom: 0;
-    border-radius: 0 0 0 0;
-    background: #333;
-    color: #d1e5f0;
-  }
-
-.footer {
-  background-color: #333;
-  min-width: 640px;
-  color: white;
-  margin-top: 100px;
-  margin-bottom: 0;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-bottom: 10px;
-  border-top: 1px solid #222;
-  font-family: 'Roboto Condensed Bold', sans-serif;
-}
-
-.footer a {
-  color: #92c5de ;
-}
-
-.footer hr{
-        height: 1px;
-        background-color: #888;
-        border: none;
-      }
+img {
+    border-radius: 50%;
+    }
