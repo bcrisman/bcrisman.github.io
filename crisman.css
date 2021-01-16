@@ -4,10 +4,13 @@ html {font-size: 14px; }
 body {font-weight: 150;
        font-family: 'Roboto', sans-serif;
        background-color: #f2f4f3;
+       -webkit-font-smoothing: antialiased;
+       -moz-osx-font-smoothing: grayscale;
        color: #000;}
 
 /* Styling Main Body Text */
-.maintext{background-color: #f2f4f3;
+.maintext{
+  background-color: #f2f4f3;
   color: #000;
   max-width: 650px;
   margin-left: auto;
@@ -23,19 +26,21 @@ body {font-weight: 150;
 }
 
 h1 {font-style: normal;
+  font-weight:bold;
      margin-bottom: 1.5rem;
-     color: #000;
+     color: #000000;
      font-size: 3rem;
      line-height: 1;
   }
 
-h2 {font-style: normal;
+h2 {font-weight: 700;
      margin-bottom: 1.5rem;
      color: #000;
-     line-height: 1;
   }
-
-h4 {
+h3{
+  font-weight: 700;
+}
+h4 {font-weight: 700;
        color: #000;
        line-height: 1;
     }
