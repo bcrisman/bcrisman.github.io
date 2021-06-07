@@ -2,26 +2,26 @@
 html {font-size: 14px; }
 
 body {font-weight: 150;
-       font-family: 'Roboto', sans-serif;
-       background-color: #f2f4f3;
+       font-family: 'Open Sans', sans-serif;
+       background-color: #ffffff;
        -webkit-font-smoothing: antialiased;
        -moz-osx-font-smoothing: grayscale;
        color: #000;}
 
 /* Styling Main Body Text */
 .maintext{
-  background-color: #f2f4f3;
+  background-color: #ffffff;
   color: #000;
-  max-width: 650px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 7%;
   padding-right: 7%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   }
 
  a{
-  color: #BB3628;
+  color: #007afc;
   text-decoration: none;
 }
 
@@ -47,3 +47,199 @@ h4 {font-weight: 700;
 img {
     border-radius: 100%;
     }
+
+
+/* sidebar */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-left {
+  width: 160px;
+}
+
+.flex-right {
+  width: 80%;
+}
+
+.sidenav {
+  width: 100px; /* Set the width of the sidebar */
+  position: sticky; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 75px; /* Stay at the top */
+  left: 10px;
+  background-color: transparent; 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  margin-left: auto;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #333333;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #007afc;
+}
+
+@media screen and (max-width: 850px) {
+  .sidenav {visibility: hidden;}
+  .flex-right {width: 100%}
+  .flex-left {width: 0%}
+}
+
+/* footnotes */
+.popup .popuptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: #ffffff;
+  font-style: italic;
+  font-size: 12;
+  border-color: #007afc;
+  border-style: solid;
+  border-width: 1px;
+  color: #007afc;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -51px;
+}
+
+/* Popup arrow */
+.popup {
+  position: relative;
+  color: #007afc;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #007afc transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn .1s;
+  animation: fadeIn .1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/* Carousel */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.gallery {
+  background: #ffffff;
+  margin-bottom: 40px;
+}
+
+.gallery-cell {
+  width: 32%;
+  height: 200px;
+  margin-right: 1.5%;
+  background: #ffffff;
+  padding: 10px;
+  border-color: #007afc;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+  counter-increment: gallery-cell;
+  font-style: italic;
+  font-size: 10;
+  color: #000000;
+}
+
+/* cell content */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+}
+
+.comment-icon {
+  align: right;
+  font-size: 20px;
+  text-align: center;
+  margin-left: auto;
+  color: #007afc;
+
+}
+
+.flickity-button{
+  color:#007afc;
+  background: transparent;
+  font-size: 10;
+}
+.flickity-button:hover{
+  color:#333333;
+  background: transparent;
+
+}
+.flickity-prev-next-button {
+  top: 90%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+  background: #007afc;
+}
+
+@media screen and (max-width: 850px) {
+  .gallery-cell {
+    width: 49%;
+}
+
+@media screen and (max-width: 500px) {
+  .gallery-cell {
+    width: 99%;
+}

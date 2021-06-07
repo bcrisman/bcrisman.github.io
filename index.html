@@ -16,19 +16,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
   <meta name="viewport" content="width=device-width, initial-scale=0.5">
 
-  <meta name="description" content="Benjamin C. Crisman">
-  <meta name="author" content="Benjamin C. Crisman">
+  <meta name="description" content="Benjamin Crisman">
+  <meta name="author" content="Benjamin Crisman">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="icon" href="icon.svg">
+  <link rel="mask-icon" href="mask-icon.svg" color="#000000">
+
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/flickity.css" media="screen">
 
   <!-- setting website title-->
   <title>Benjamin Crisman</title>
@@ -39,124 +38,272 @@
 </head>
 
 <!-- Header -->
-<div class = "maintext" id = "about">
-  <p> <img style = "padding-left: 0px; float: right;" src="content/pic.jfif" alt="profile pricture crisman"  width = 150px align="right">
-  </p>
-  <table width=“100%" border="0" cellspacing=“5” cellpadding=“55”>
-    <tr>
-      <td width=“100%" align=“left”><h1 style=“float:left;”><b>Benjamin Crisman  &nbsp <br></b></h1>
-        <h4 style=“float:top;”>Ph.D. Candidate<br>Princeton University</h4><h5>bcrisman [at] princeton.edu &nbsp; &nbsp; <a href="/content/crisman_cv_2020.pdf">[curriculum vitae]</a><br>
-          <a href="https://scholar.google.com/citations?user=oagoQrsAAAAJ&hl=en" class="fa fa-graduation-cap"></a> scholar &nbsp; &nbsp;
-          <a href="https://twitter.com/bccrisman" class="fa fa-twitter"></a> twitter &nbsp; &nbsp;
-          <a href="https://github.com/bcrisman" class="fa fa-github"></a> github &nbsp; &nbsp;
-          <a href="https://www.linkedin.com/in/bcrisman/" class="fa fa-linkedin"></a> linkedin &nbsp; &nbsp;</h5>
-</td>
-    </tr>
-  </table>
+<body>
+  <div class = "flex-container">
+    <div class = "flex-left" > 
+
+    </div>
+    <div class = "flex-right">
+    <div class = "maintext" id = "info">
+      <p> <img style = "padding-left: 0px; float: right;" src="content/pic.jfif" alt="profile pricture crisman"  width = 150px align="right">
+      </p>
+      <table border="0" cellspacing="5">
+        <tr>
+          <td width="100%" align="left"><h1><b>Benjamin Crisman  &nbsp <br></b></h1>
+            <h4 style=“float:top;”>Ph.D. Candidate<br>Princeton University</h4><h5>bcrisman [at] princeton.edu &nbsp; &nbsp; <a href="/content/crisman-cv-spring-2020.pdf">[curriculum vitae]</a><br>
+              <a href="https://scholar.google.com/citations?user=oagoQrsAAAAJ&hl=en" class="fa fa-graduation-cap"></a> scholar &nbsp; &nbsp;
+              <a href="https://twitter.com/bccrisman" class="fa fa-twitter"></a> twitter &nbsp; &nbsp;
+              <a href="https://github.com/bcrisman" class="fa fa-github"></a> github &nbsp; &nbsp;
+              <a href="https://www.linkedin.com/in/bcrisman/" class="fa fa-linkedin"></a> linkedin &nbsp; &nbsp;</h5>
+          </td>
+        </tr>
+      </table>
+    </div>
+    </div>
 </div>
 
+<div class = "flex-container">
+  <div class = "flex-left">
+    <div class="sidenav">
+      <a href="#info">Contact</a>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#teaching">Teaching</a>
+    </div>
+  </div>
+  <div class = "flex-right">
 <!-- main text -->
-<div class = "maintext" id = "about">
-  <h2>About</h2>
+    <div class = "maintext" id = "about">
+      <h2>About</h2>
+      <p>
+        I’m a Ph.D. Candidate in the Department of Politics at Princeton University where 
+        I use tools from computational social science to study how individuals interpret and respond to political 
+        information in the context of social and armed movements.  
+      </p>
+      <p> 
+        I also provide consulting services to multinational organizations, NGOs, and think tanks on issues
+        related to computationally intensive data analysis, policy evaluation, and information design.
+         I am not currently accepting new clients.
+      </p>
+      <!---<p>  data analysis, policy evaluation, and information design. I am not accepting new consulting clients at this time. </p> --->
+      <p>
+        Prior to starting at Princeton, I worked as a Research
+        Specialist at the Empirical Studies of Conflict (ESOC)
+        lab evaluating responses to and the prevention of fragility, conflict, and violence and at the Center for Global Development.
+        I hold an MA in Politics from Princeton University <span class="popup" onmouseenter="myFunction()" onmouseleave="myFunction()">[+]<span class="popuptext" id="infoNote1">Fields: Comparative Politics and Quantitative Methods</span>
+      </span>,
+        an MSc in Development Economics from the University
+        of East Anglia <span class="popup" onmouseenter="myFunction2()" onmouseleave="myFunction2()">[+]<span class="popuptext" id="infoNote2">Field: Impact Evaluation (causal inference for program evaluation)</span>
+      </span>, and an AB in Economics and International
+        and Area Studies from Washington University in St. Louis.
+      </p>
+    </div>
 
-  <p>
-    I’m a Ph.D. Candidate in the Department of Politics
-    at Princeton University. My dissertation research examines
-    why some social movements use violence to advance their claims
-    while others do not
-    using examples from Nigeria, the United States, and India.
-    More broadly, my research explores responses to and the prevention of
-    fragility, conflict, and violence using tools from computational social science.
-  </p>
-  <p>
-    Prior to starting at Princeton, I worked as a Research
-    Specialist at the Empirical Studies of Conflict (ESOC)
-    project and at the Center for Global Development.
-    I hold an MA in Politics from Princeton University,
-    an MSc in Development Economics from the University
-    of East Anglia and an AB in Economics and International
-    and Area Studies from Washington University in St. Louis.
-  </p>
+    <div class = "maintext" id = "research">
+      <h2>Research</h2>
+      <h3><em>Peer Reviewed</em></h3>
+        <p style="text-indent: -2em; margin-left: 2em;">Crisman, Benjamin. (2020).
+          <strong>“Disease, Disaster, and Disengagement: Ebola and Political Participation in Sierra Leone.”</strong>
+        <em> Studies in Comparative International Development.</em> https://doi.org/10.1007/s12116-020-09300-x. <br>
+        <a href = "https://link.springer.com/article/10.1007/s12116-020-09300-x">
+        [paper]<a href="/content/Crisman_disease_disaster_and_disengagement.pdf"> [preprint]
+        </a>
+      </p>
+      <h3><em><strong>Working Papers</strong></em></h3>
+        <p style="text-indent: -2em; margin-left: 2em;">
+          Blair, Graeme, Mohamed Bukar, Rebecca Littman, Elizabeth R. Nugent, Rebecca Wolfe, Benjamin Crisman,
+          Anthony Etim, and Chad Hazlett. (2020). <strong>&#8220;Trusted‌ ‌Authorities‌ ‌Can‌ ‌Change‌ ‌Minds‌ ‌and‌ ‌Shift‌ ‌Norms‌ ‌during‌ ‌Conflict‌ .&#8221;</strong>
+          <br>[Revise and Resubmit, <em>Proceedings of the National Academy of Sciences</em>]
+        </p>
+        <p style="text-indent: -2em; margin-left: 2em;">
+          Voytas, Elsa and Benjamin Crisman. (2020).  <strong>&#8220;State Violence and Participation in Transitional Justice: Evidence from Colombia.&#8221;</strong>
+          <br> <a href = "content/voytas-crisman-2021-10-31.pdf">[preprint]</a> [under review]
+        </p>
+        <p style="text-indent: -2em; margin-left: 2em;">
+          Crisman, Benjamin. (2020). <strong>&#8220;March in the Rain: Commitment and the Influence of Protest on Public Opinion.&#8221;</strong>
+          <br>[available upon request]
+        </p>
+      <h3 style=""><em><strong>Reports and Monographs</strong></em></h3>
+        <p style="text-indent: -2em; margin-left: 2em;">
+          Crisman,  Benjamin and Carla Sung Ah Yoon, Curtis Goos, Danielle Hull, Emily Romano, Jennifer Johnson, Michelle Nedashkovskaya, Narayan Subramanian, Solomon Tesfaye, and Yashna Gungadurdoss. (2020).
+          <strong>&#8220;Preventing Violent Extremism: Lessons from Kenya.&#8221;</strong>
+          <em>Woodrow Wilson School Policy Workshop Report.</em> Princeton, New Jersey.
+          <br><a href="https://issuu.com/woodrowwilsonschool/docs/preventing_violent_extremism">[report]</a>
+        </p>
+        <p style="text-indent: -2em; margin-left: 2em;">
+          Min, Eric. Manu Singh, Jacob N. Shapiro, and Benjamin Crisman. (2017).
+          <strong>“Understanding Risk and Resilience to Violent Conflicts.”</strong>
+          <em>Background paper for the United Nations–World Bank Flagship Study, Pathways for Peace: Inclusive Approaches to Preventing Violent Conflict.</em> World Bank, Washington, DC.
+          <br> <a href="https://esoc.princeton.edu/publications/understanding-risk-and-resilience-violent-conflicts">[report]</a>
+        </p>
+        <p style="text-indent: -2em; margin-left: 2em;">
+          Iyengar, Radha, Jacob Shapiro, Benjamin Crisman, Manu Singh, and James Mao. (2017).
+          <strong>“Stabilization in Afghanistan: Trends in Violence, Attitudes, Well-being and Program Activity.”</strong>
+          <em>RAND Labor and Population WR-1192.</em>
+        <br><a href="https://www.rand.org/pubs/working_papers/WR1192.html">[report]</a></p>
+        <p style="text-indent: -2em; margin-left: 2em;">
+          Crisman, Benjamin, Sarah Dykstra, Charles Kenny, and Megan O’Donnell. (2016).
+          <strong>“The Impact of Legislation on the Hazard of Female Genital Mutilation/Cutting: Regression Discontinuity Evidence from Burkina Faso."</strong>
+          <em>Center for Global Development working paper no. 432.</em> Washington, DC.
+          <br><a href="http://www.cgdev.org/publication/impact-legislation-hazard-female-genital-mutilationcutting-regression-discontinuity">[report]</a>
+        </p>
+        <p style="text-indent: -2em; margin-left: 2em;">
+          Kenny, Charles and Benjamin Crisman. (2016).
+          <strong>“Results through Transparency: Does Publicity Lead to Better Procurement?"</strong>
+          <em>Center for Global Development working paper no. 437.</em> Washington, DC.
+          <br><a href="http://www.cgdev.org/publication/results-through-transparency-does-publicity-lead-better-procurement-working-paper-437">[report]</a>
+        </p>
+      <h3 style=""><em><strong>Works in Progress</strong></em></h3>
+        <p style="text-indent: -2em; margin-left: 2em;">Crisman, Benjamin, Samikshya Siwakoti, Richa Gupta, and Jacob N. Shapiro. (2021). The Impact of Alerting Social Media Users to Exposure to Information Operations. </p>
+        <p style="text-indent: -2em; margin-left: 2em;"> Postel, Hannah and Benjamin Crisman. (2020).  &#8220;High resolution forecasting of conflict induced displacement using computer vision.&#8221; </p>
+        <h3><em><strong>Other Writing</strong></em></h3>
+        <p style="text-indent: -2em; margin-left: 2em;">
+          Crisman, Benjamin, Alejandro Feged, Mike Findley, Oliver Kaplan, Kristina Kempkey, Paul Kuhne, Joe Young.
+          <strong>&#8220;Hacking&#8221; The Reintegration of FARC Rebels in Colombia. </strong><em>Political Violence at a Glance</em>.
+          <br><a href="http://politicalviolenceataglance.org/2017/07/25/hacking-the-reintegration-of-farc-rebels-in-colombia/">[Blog Post]</a>
+        </p>
+    </div>
+
+    <div class = "maintext" id = "teaching">
+      <h2>Teaching</h2>
+      <h3><em>Student feedback</em></h3>
+      <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+        <div class="gallery-cell">
+          <div class = "comment-icon"><i class="fa fa-commenting" aria-hidden="true"></i> </div>
+          <p>
+            &ldquo;My preceptor was absolutely incredible. I have never had a better preceptor. He was able
+            to answer questions and convey material in a simple and engaging way, and also made himself
+            available to us to answer questions outside of precept. I so appreciate all of his work to
+            make the course udnerstandable and enjoyable for us.&rdquo;
+          </p>
+        </div>
+        <div class="gallery-cell">
+          <div class = "comment-icon"><i class="fa fa-commenting" aria-hidden="true"></i> </div>
+          <p>
+            &ldquo;BEN IS A GEM! HE was so patient with my millions of questions and incredibly 
+            clear with his responses. I would not have done even slightly well in this class without Ben.
+            He was so kind, smart, and a genuinely great teacher/communicator.&rdquo;
+          </p>
+        </div>
+        <div class="gallery-cell">
+          <div class = "comment-icon"><i class="fa fa-commenting" aria-hidden="true"></i> </div>
+          <p>
+            &ldquo;Ben was charismatic, well-versed, and highly patient for everyone in class, 
+          regardless of their pace. He encouraged student participation regularly and 
+          always offered his services to fit each person's individual needs, and student
+          appreciation in response was evident; there was usually high attendance for 
+          each of the precepts. Great preceptor!&rdquo;
+          </p>
+        </div>
+        <div class="gallery-cell">
+          <div class = "comment-icon"><i class="fa fa-commenting" aria-hidden="true"></i> </div>
+          <p>
+            &ldquo;Precepts were awesome and where the majority of my learning occurred. Ben was patient, kind,
+            knowledgeable, and helpful. Thank you Ben!! I really appreciated how you made the course seem
+            not as overwhelming and maybe even fun.&rdquo;
+          </p>
+        </div>
+        <div class="gallery-cell">
+          <div class = "comment-icon"><i class="fa fa-commenting" aria-hidden="true"></i> </div>
+          <p>
+            &ldquo;Without Ben's precept I would be completely lost in the course. He helped frame 
+            the conceptual within the coding and made the connection clear. He patiently answered our questions
+            and even stayed beyond time to make sure we understood. He also helped guide our questions to
+            study for quizzes and problem sets.&rdquo;
+          </p>
+        </div>
+        <div class="gallery-cell">
+          <div class = "comment-icon"><i class="fa fa-commenting" aria-hidden="true"></i> </div>
+          <p>
+            &ldquo;BEN IS AMAZING. He was very patient, really helpful throughout precept, and really helped clarify
+            a lot of questions from the lecture, handouts, and psets. also great coding advice.&rdquo;
+          </p>
+        </div>
+        <div class="gallery-cell">
+          <div class = "comment-icon"><i class="fa fa-commenting" aria-hidden="true"></i> </div>
+          <p>
+            &ldquo;Precepts were amazing, Ben was amazing and super super helpful. Wouldn't change a thing&rdquo;
+          </p>
+        </div>
+        <div class="gallery-cell">
+          <div class = "comment-icon"><i class="fa fa-commenting" aria-hidden="true"></i> </div>
+          <p>
+            &ldquo;Great! Ben is a fantastic preceptor and he was really good at breaking down concepts and making sure
+            everyone was involved in precept. He also went above and beyond his duties as my preceptors by sitting
+            down with me during office hours and goign over how to do my JP - I really, really appreciated that and
+            am so grateful for his time and help!&rdquo;
+          </p>
+        </div>
+        <div class="gallery-cell">
+          <div class = "comment-icon"><i class="fa fa-commenting" aria-hidden="true"></i> </div>
+          <p>
+            &ldquo;Amazing and intellectually engaging precept.&rdquo;
+          </p>
+        </div>
+        <div class="gallery-cell">
+          <div class = "comment-icon"><i class="fa fa-commenting" aria-hidden="true"></i> </div>
+          <p>
+            &ldquo;Easily one of the best preceptors I have had at Princeton. Went above and beyond and devoted his
+            time to help students understand the material and create meaningful discussions. He connected the material
+            from lecture with the assigned readings which was very helpful.&rdquo;
+          </p>
+        </div>
+      </div>
+
+      <h3><em><strong> Princeton University </strong></em></h3>
+      <p><strong><a href = "https://politics.princeton.edu/senior-thesis-poster-session"> POL938: Senior Thesis Poster Session </a></strong>, Graduate Student Coordinator, Spring 2021 </p>
+      <p>
+        In order to graduate, Politics seniors must present a professional poster describing
+        their senior thesis research. To prepare students for this event, we provided students
+        with informational sessions, work shops, and one-on-one consultations. While broadly focused
+        scientific communication, these sessions covered issues related to public speaking, data visualization,
+        and user experience (UX).
+        <br>
+        <a href = "content/poster-session-handout.pdf">[handout]</a>  <a href = "content/poster-session-presentation.html">[slides]</a> &nbsp; No course evaluation data collected.
+      </p>
+      <p><strong><a href = "https://libguides.princeton.edu/vizhub"> Stokes Visualization Hub</a></strong>, Data Visualization Consultant, Spring 2020, Fall 2020, Spring 2021 </p>
+      <p> The Stokes Visualization Hub is a space and service that supports the interdisciplinary digital research and information visualization needs of the Princeton University community. The service is centralized in the E-classroom at Stokes Library in Wallace Hall. Stokes library staff, in collaboration with experts from other departments, work to design and teach workshops focusing on data visualization, qualitative data analysis and the digital research processes.  </p>
+      <p><strong><a href = "https://registrar.princeton.edu/course-offerings/course-details?term=1204&courseid=010956"> POL360: Social Movements and Revolution</a></strong>, Preceptor (TA), Spring 2020 </p>
+      <p>This course investigates the politics of protest and revolution, examining the conditions under which protest movements emerge, their choice of tactics, the effects of repression and concessions, and the determinants of movement success. The second part of the course focuses on revolutions, examining the forms they assume and the conditions under which they develop and prove successful. Examples discussed include the civil rights, women's and environmental movements; the French, Russian, and Iranian revolutions; the collapse of communism; and the "color revolutions," the Arab Spring, and other waves of revolution in the contemporary world.
+      <br> <a href = "content/teaching/TeachingEvaluationsPOL360.pdf">[course feedback]</a> Median rating 5/5. </p>
+      <p><strong><a href = "https://registrar.princeton.edu/course-offerings/course-details?term=1202&courseid=013781"> POL345: Introduction to Quantitative Social Science</a></strong>, Preceptor (TA) &#215;2, Fall 2019 </p>
+      <p>Would universal health insurance improve the health of the poor? Do patterns of arrests in US cities show evidence of racial profiling? What accounts for who votes and their choice of candidates? This course will teach students how to address these and other social science questions by analyzing quantitative data. The course introduces basic principles of causal inference and programming skills for data analysis. The goal is to provide students with the foundation necessary to analyze data in their own research and to become critical consumers of statistical claims made in the news media, in policy reports, and in academic research.
+      <br> <a href = "content/teaching/TeachingEvaluationsPOL345.pdf">[course feedback]</a> Median ratings 5/5 & 5/5. </p>
+      <p><strong><a href = "https://esoc.princeton.edu/projects/executive-education-leading-evidence-based-decisions">ExecEd: Global Security, Information Processing, and Leadership</strong></a>, Teaching Fellow, Spring 2016</p>
+      <p> This course introduces participants to the core
+        analytic principles of information processing. The principles are universally applicable to
+        problems of extracting reliable and accurate conclusions from information and data.
+        Second, we apply these principles to critical global security and conflict challenges. In
+        the course of doing so, participants are also introduced to cutting edge research on
+        security and conflict. Third, we explore leadership strategies to incorporate the
+        information processing principles. The goal is for participants not only to master the
+        principles themselves, but also to develop approaches that will help their home
+        organizations deal with security and conflict information more efficiently and accurately.
+        <br>
+      </p>
+
+    </div>
+
+    <div style = "margin-right: auto; margin-left: auto"> <br> <br> <p align = "center">&#169; 2021 Benjamin Crisman</p> <br> </div>
+  </div>
 </div>
 
-<div class = "maintext" id = "research">
-  <h2>Research</h2>
-  <h3><em>Peer Reviewed</em></h3>
-    <p style="text-indent: -2em; margin-left: 2em;">Crisman, Benjamin. (2020).
-      <strong>“Disease, Disaster, and Disengagement: Ebola and Political Participation in Sierra Leone.”</strong>
-     <em> Studies in Comparative International Development.</em> https://doi.org/10.1007/s12116-020-09300-x. <br>
-     <a href = "https://link.springer.com/article/10.1007/s12116-020-09300-x">
-     [paper]<a href="/content/Crisman_disease_disaster_and_disengagement.pdf">[preprint]
-     </a>
-   </p>
-  <h3><em><strong>Working Papers</strong></em></h3>
-    <p style="text-indent: -2em; margin-left: 2em;">
-      Blair, Graeme, Mohamed Bukar, Rebecca Littman, Elizabeth R. Nugent, Rebecca Wolfe, Benjamin Crisman, Anthony Etim, and Chad Hazlett. (2020). <strong>&#8220;Religious Leaders Can Shift Norms and Change Minds.&#8221;</strong>
-      <br>[under review]
-    </p>
-    <p style="text-indent: -2em; margin-left: 2em;">
-      Voytas, Elsa and Benjamin Crisman. (2020).  <strong>&#8220;State Violence and Participation in Transitional Justice: Evidence from Colombia.&#8221;</strong>
-      <br> [under review]
-    </p>
-    <p style="text-indent: -2em; margin-left: 2em;">
-      Crisman, Benjamin. (2020). <strong>&#8220;Tactical Choice in Contentious Politics: Evidence from the Niger Delta.&#8221;</strong>
-      <br>[available upon request]
-    </p>
-    <p style="text-indent: -2em; margin-left: 2em;">
-      Crisman, Benjamin. (2020). <strong>&#8220;March in the Rain: Commitment and the Influence of Protest on Public Opinion.&#8221;</strong>
-      <br>[available upon request]
-    </p>
-  <h3 style=""><em><strong>Reports and Monographs</strong></em></h3>
-    <p style="text-indent: -2em; margin-left: 2em;">
-      Crisman,  Benjamin and Carla Sung Ah Yoon, Curtis Goos, Danielle Hull, Emily Romano, Jennifer Johnson, Michelle Nedashkovskaya, Narayan Subramanian, Solomon Tesfaye, and Yashna Gungadurdoss. (2020).
-      <strong>&#8220;Preventing Violent Extremism: Lessons from Kenya.&#8221;</strong>
-      <em>Woodrow Wilson School Policy Workshop Report.</em> Princeton, New Jersey.
-      <br><a href="http://wws.princeton.edu/graduate-programs/curriculum/workshops/policy-workshop-reports">[report]</a>
-    </p>
-    <p style="text-indent: -2em; margin-left: 2em;">
-      Min, Eric. Manu Singh, Jacob N. Shapiro, and Benjamin Crisman. (2017).
-      <strong>“Understanding Risk and Resilience to Violent Conflicts.”</strong>
-      <em>Background paper for the United Nations–World Bank Flagship Study, Pathways for Peace: Inclusive Approaches to Preventing Violent Conflict.</em> World Bank, Washington, DC.
-      <br> <a href="https://esoc.princeton.edu/publications/understanding-risk-and-resilience-violent-conflicts">[report]</a>
-    </p>
-    <p style="text-indent: -2em; margin-left: 2em;">
-      Iyengar, Radha, Jacob Shapiro, Benjamin Crisman, Manu Singh, and James Mao. (2017).
-      <strong>“Stabilization in Afghanistan: Trends in Violence, Attitudes, Well-being and Program Activity.”</strong>
-      <em>RAND Labor and Population WR-1192.</em>
-    <br><a href="https://www.rand.org/pubs/working_papers/WR1192.html">[report]</a></p>
-    <p style="text-indent: -2em; margin-left: 2em;">
-      Crisman, Benjamin, Sarah Dykstra, Charles Kenny, and Megan O’Donnell. (2016).
-      <strong>“The Impact of Legislation on the Hazard of Female Genital Mutilation/Cutting: Regression Discontinuity Evidence from Burkina Faso."</strong>
-      <em>Center for Global Development working paper no. 432.</em> Washington, DC.
-      <br><a href="http://www.cgdev.org/publication/impact-legislation-hazard-female-genital-mutilationcutting-regression-discontinuity">[report]</a>
-    </p>
-    <p style="text-indent: -2em; margin-left: 2em;">
-      Kenny, Charles and Benjamin Crisman. (2016).
-      <strong>“Results through Transparency: Does Publicity Lead to Better Procurement?"</strong>
-      <em>Center for Global Development working paper no. 437.</em> Washington, DC.
-      <br><a href="http://www.cgdev.org/publication/results-through-transparency-does-publicity-lead-better-procurement-working-paper-437">[report]</a>
-    </p>
-  <h3 style=""><em><strong>Works in Progress</strong></em></h3>
-    <p style="text-indent: -2em; margin-left: 2em;"> Crisman, Benjamin. (2020).  &#8220;Weapons of the Few: Numbers and Support for Violence in the American Far Right.&#8221; </p>
-    <p style="text-indent: -2em; margin-left: 2em;"> Postel, Hannah and Benjamin Crisman. (2019).  &#8220;High resolution forecasting of conflict induced displacement using computer vision.&#8221; </p>
-  <h3><em><strong>Other Writing</strong></em></h3>
-    <p style="text-indent: -2em; margin-left: 2em;">
-       Crisman, Benjamin, Alejandro Feged, Mike Findley, Oliver Kaplan, Kristina Kempkey, Paul Kuhne, Joe Young.
-      <strong>&#8220;Hacking&#8221; The Reintegration of FARC Rebels in Colombia. </strong><em>Political Violence at a Glance</em>.
-      <br><a href="http://politicalviolenceataglance.org/2017/07/25/hacking-the-reintegration-of-farc-rebels-in-colombia/">[Blog Post]</a>
-    </p>
-</div>
 
-<div class = "maintext" id = "teaching">
-  <h2>Teaching</h2>
-  <h3><em><strong> Princeton University </strong></em></h3>
-  <p><strong><a href = "https://libguides.princeton.edu/vizhub">  Stokes Visualization Hub</a></strong>, Data Visualization Consultant, Spring 2020 </p>
-  <p> The Stokes Visualization Hub is a space and service that supports the interdisciplinary digital research and information visualization needs of the Princeton University community. The service is centralized in the E-classroom at Stokes Library in Wallace Hall. Stokes library staff, in collaboration with experts from other departments, work to design and teach workshops focusing on data visualization, qualitative data analysis and the digital research processes.  </p>
-  <p><strong><a href = "https://registrar.princeton.edu/course-offerings/course-details?term=1204&courseid=010956"> POL360: Social Movements and Revolution</a></strong>, Preceptor (TA), Spring 2020 </p>
-  <p>This course investigates the politics of protest and revolution, examining the conditions under which protest movements emerge, their choice of tactics, the effects of repression and concessions, and the determinants of movement success. The second part of the course focuses on revolutions, examining the forms they assume and the conditions under which they develop and prove successful. Examples discussed include the civil rights, women's and environmental movements; the French, Russian, and Iranian revolutions; the collapse of communism; and the "color revolutions," the Arab Spring, and other waves of revolution in the contemporary world.
-  <br> <a href = "content/teaching/TeachingEvaluationsPOL360.pdf">[course feedback]</a> Median rating 5/5. </p>
-  <p><strong><a href = "https://registrar.princeton.edu/course-offerings/course-details?term=1202&courseid=013781"> POL345: Introduction to Quantitative Social Science</a></strong>, Preceptor (TA) x2, Fall 2019 </p>
-  <p>Would universal health insurance improve the health of the poor? Do patterns of arrests in US cities show evidence of racial profiling? What accounts for who votes and their choice of candidates? This course will teach students how to address these and other social science questions by analyzing quantitative data. The course introduces basic principles of statistical inference and programming skills for data analysis. The goal is to provide students with the foundation necessary to analyze data in their own research and to become critical consumers of statistical claims made in the news media, in policy reports, and in academic research.
-  <br> <a href = "content/teaching/TeachingEvaluationsPOL345.pdf">[course feedback]</a> Median ratings 5/5 & 5/5. </p>
+<script>
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("infoNote1");
+    popup.classList.toggle("show");
+  }
+</script>
+<script>
+  // When the user clicks on div, open the popup
+  function myFunction2() {
+    var popup = document.getElementById("infoNote2");
+    popup.classList.toggle("show");
+  }
+</script>
+<script src="assets/flickity.pkgd.min.js"></script>
 
-</div>
+
+</body>
