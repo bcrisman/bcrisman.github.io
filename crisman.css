@@ -1,8 +1,7 @@
 @charset "UTF-8";
 html {font-size: 14px; }
 
-body {font-weight: 150;
-       font-family: 'Open Sans', sans-serif;
+body { font-family: 'Open Sans', sans-serif;
        background-color: #ffffff;
        -webkit-font-smoothing: antialiased;
        -moz-osx-font-smoothing: grayscale;
