@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bencrisman.com/sitemap.xml

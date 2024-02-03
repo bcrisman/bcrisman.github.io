@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Blog on Ben Crisman</title>
+    <link>https://bencrisman.com/posts/</link>
+    <description>Recent content in Blog on Ben Crisman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2024 Benjamin Crisman</copyright>
+    <lastBuildDate>Sat, 25 Nov 2023 17:24:27 -0400</lastBuildDate><atom:link href="https://bencrisman.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Patience</title>
+      <link>https://bencrisman.com/posts/patience/</link>
+      <pubDate>Sat, 25 Nov 2023 17:24:27 -0400</pubDate>
+      
+      <guid>https://bencrisman.com/posts/patience/</guid>
+      <description>Seven. My oldest son is seven and he is on the verge of being genuinely helpful with outdoor chores. A welcome horizon, to be sure, but already seven is the age where kids (my kids at least) make for genuinely great companionship during work.
+He and I spent the better part of the afternoon outside today raking leaves and chatting to the neighbors while his brother, five, explored the front yard on his scooter.</description>
+      <content:encoded><![CDATA[<p>Seven. My oldest son is seven and he is on the verge of being genuinely helpful with outdoor chores. A welcome horizon, to be sure, but already seven is the age where kids (my kids at least) make for genuinely great companionship during work.</p>
+<p>He and I spent the better part of the afternoon outside today raking leaves and chatting to the neighbors while his brother, five, explored the front yard on his scooter. It was my first proper day off since taking a new job. The leaves were in no particular rush to be done with the task and neither were we.</p>
+<p>The slow work made me reflect on some of my earliest memories working outside with my father. I recall holding up a splintery fence rail while my dad fixed it into place. The rail was replacing one that some horse or other had kicked through.</p>
+<p>My dad had a very strange work schedule, if you can call it that. A equine veterinarian, he spent weeks at a time traveling from this farm to that all over the country. The upside of this chaotic schedule is that he was also home for days and sometimes weeks at a time in the off-season. This meant he had real time for projects and real, unrushed time for his kids.</p>
+<p>He could devote a whole afternoon during the week to taking a long walk along the river. He could devote several days to some poorly planned 8 year old&rsquo;s scheme. He could and he did.</p>
+<p>My mother I&rsquo;m sure sees it differently. My siblings and I would gallavant off with our father during adventure times and she would take more than the lion&rsquo;s share of the day-to-day realities of child-rearing. She would make sure we had clothes that fit, were chaffeured to appointments and practice on time, and were fed more than grilled cheese and chocolate cake.</p>
+<p>In my own day to day life, I rarely have time for either. I didn&rsquo;t have a clear example of a nine to five job and the associated lifestyle. If I had, I would have taken greater care to avoid it.</p>
+<p>And this isn&rsquo;t to say I don&rsquo;t like my job. I genuinely love my job. I work on important and interesting problems with intelligent and kind people.</p>
+<p>However, I do wish I had more opportunity for unrushed time with my kids. It isn&rsquo;t about more time, it&rsquo;s about the shape of it. I&rsquo;d work a week straight if I had 5 days off. Or perhaps get off earlier and have more of an opportunity for time at the end of the day to spend with the kids in dedicated pursuits.</p>
+<p>This is what I hope the future of work brings. More <em>unrushed</em> time if not more time.</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Most Data Scientists Are Unwitting Social Scientists</title>
+      <link>https://bencrisman.com/posts/unwitting-social-scientists/</link>
+      <pubDate>Thu, 02 Nov 2023 17:24:27 -0400</pubDate>
+      
+      <guid>https://bencrisman.com/posts/unwitting-social-scientists/</guid>
+      <description>The vast majority of data scientists working in the field right now are likely working on problems that affect and are affected by humans.
+Humans are hard.
+They make for messy, complicated data from which it can be challenging to draw conclusions. And these challenges are entirely separate from the technical difficulties of working with data. Humans also make messy data due to poor database design and bad naming conventions, but those are different stories.</description>
+      <content:encoded><![CDATA[<p>The vast majority of data scientists working in the field right now are likely working on problems that affect and are affected by humans.</p>
+<p>Humans are hard.</p>
+<p>They make for messy, complicated data from which it can be challenging to draw conclusions.
+And these challenges are entirely separate from the technical difficulties of working with data.
+Humans also make messy data due to poor database design and bad naming conventions, but those are different stories.</p>
+<p>Let&rsquo;s take a look at some key features of <em>homo sapiens</em> in the context of technology. Humans:</p>
+<ul>
+<li>try to game systems to their advantage.</li>
+<li>are easily distracted by phones, other humans, and changes to their environment.</li>
+<li>will bristle at being told that they might be distracted by their phones.</li>
+<li>will bristle at being told what to do if done too directly.</li>
+<li>will <a href="https://en.wikipedia.org/wiki/Jedi_census_phenomenon">choose responses because they are humorous</a> rather than true.</li>
+<li>will make random selections on forms to move through them faster.</li>
+<li>suffer from myriad cognitive and social biases.</li>
+</ul>
+<p>Humans are <em>hard</em>.</p>
+<p>Computer science and statistics courses, the bread and butter of traditional data science training, often (but not always) miss out on these human considerations. While some nof these examples will show up only in the error term of our estimates others reflect dynamics that can be incredibly important for understanding patterns that are playing out in your data, what these data reflect in the real world, and most importantly, what actions you should take related to those patterns.</p>
+<p>As a matter of policy, should the Australian government take action on their estimate of households identifying as members of the Jedi religion? Should they allocate funding to Jedi temples to ensure the local Jedi population has adequate physical places of worship?</p>
+<p>If we design an intervention that reduces measured spam to zero, can we say that we&rsquo;ve eliminated spam on our platform?</p>
+<p>Any time there is a human anywhere in your data generating process, you are doing social science. Labelers are fallible.</p>
+<h2 id="measurement">Measurement</h2>
+<h2 id="prediction">Prediction</h2>
+<h2 id="inference">Inference</h2>
+<p>Incentives
+Adverse selection
+Moral Hazard
+Predictive optimization vs<br>
+commons biases in survey design (framing, first question, desireability bias)</p>
+<p>This means that any time you have humans somewhere in your data generating process, you are doing social science.</p>
+<p>The reason this is worth noting is that even the most technically proficient data scientists often have no social science training.</p>
+<blockquote>
+<h3 id="example-1">Example 1.</h3>
+<p>An insurance policy</p>
+</blockquote>
+<ul>
+<li>clear up some misconceptions (what is a social scientist). A computational social scientist is someone who uses computational tools like HPC, ML, simulation, ABM etc to answer social question. That is <em>not</em> what I&rsquo;m talking about here.</li>
+<li>Claim: any time a human interacts with your data generating process.</li>
+<li>Why this matters: Your policy choices will be wrong. (link to against predictive optimization).</li>
+<li>Examples of tools: selection bias, game theoretic considerations, accidental &rsquo;nudges&rsquo;, etc</li>
+<li>Solution &ndash; In the same way we have a great &lsquo;missing semester&rsquo; for computer scientists, I really wish there were a missing</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

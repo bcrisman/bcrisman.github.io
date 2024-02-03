@@ -1,0 +1,29 @@
+baseURL = 'https://bencrisman.com/'
+languageCode = 'en-us'
+title = 'Ben Crisman'
+theme = "hugo-bearcub"
+copyright = "© 2024 Benjamin Crisman"  
+
+
+enableRobotsTXT = true
+
+[author]
+  name = "Benjamin Crisman"
+
+
+[markup]
+  [markup.highlight]
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = false
+
+[params]
+  # The description of your website
+  description = "Ben Crisman's personal blog."
+  madeWith = "Lancaster, PA"
+  dateFormat = "2006-01-02"
+
+  # The path to your favicon
+  favicon = "icon.svg"
+
+  [social]
