@@ -11,7 +11,6 @@ weight: 2
 
 **GOV271: International Security**, Adjunct Instructor, Spring 2024
 
-Ongoing.
 
 {{< rawhtml >}}
 <br>
