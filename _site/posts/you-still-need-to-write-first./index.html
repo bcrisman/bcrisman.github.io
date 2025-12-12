@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http_equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+      You still need to write first. | bencrisman.com
+    </title>
+
+    <link rel="stylesheet" href="/css/site.css">
+    <script src="/js/site.js"></script>
+  </head>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Ben Crisman</a></li>
+        <li><a href="/research">Research</a></li>
+        <li><a href="/teaching">Teaching</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <main>
+      <h1><a href="#you-should-still-be-writing-first" aria-hidden="true" class="anchor" id="you-should-still-be-writing-first"></a>You should still be writing first</h1>
+<p>On X, Madhu Gurumurthy -- a product exec on the Gemini team at Google-- shared that Google is moving froma  "writing-first culture" to a "building-first" one.</p>
+<p>His argument is that in ye olden times, writing clarified your thinking. This allowed you to understand what needed to be built before you start spending engineering hours, apparently Google's binding constraint, on the product. Now, he claims, instead you can just vibe code your prototype instead of writing a PRD.</p>
+<p>At face value, I think this is a bad take.</p>
+<p>On one hand, I am a big proponent of "learning by building." I think that building a prototype is a great way to learn more about the problem domain and potential pitfalls that you might run into down the road. Back of the envelope calculations on scale, constraints, etc give you better insights into high level architectural considerations that can be difficult to change down the road.</p>
+<p>However, I'm not convinced that vibe coding anything gives you that same level of problem knowledge unless you are very deliberate in how you structure your vibe coding prototypes, perhaps comparing different approaches. However, in order to do this well, IMO, we're back to deep thinking in advance of writing any code. And what is a great tool for deep thinking? Writing!</p>
+<p>After all, all vibe coding really does is write code fast. Not always good or correct code, but definitely fast.</p>
+<p>In order to vibe code well, you (as in you, the human) still need to have or develop a clear understanding of the problem at hand and the potential paths toward a solution.</p>
+<p>The 'build-first' approach is that it seems like it is extraordinarily myopic. In essence, while it may help you get to a local optimum much much sooner, you may also be building the wrong thing, only faster.</p>
+<p>In one of my favorite conference talks, Joran Dirk Greef discusses the TigerBeetle team's approach to designing safer systems. In it, he argues that spending more time in the design phase of a project pays off in development time and in maintenance burden down the road. His team was prevented from actually getting started on TigerBeetle for several <em>months</em>. However, in that time, they were able to sketch out the system and its constituent parts and evaluate the constraints and bottlenecks that different setups would introduce.</p>
+<p>It is much easier and faster to move and alter the architecture on pen and paper than it is in code (This is the case even with vibe coding accelerating code generation).</p>
+<p>In other words, "Move slow to go fast."</p>
+<p>Vibe coding, you still gotta write the good prompt and requirements like omg. The key input to vibe coding is writing, like omg dude. Better writing, better spec -> better results.</p>
+<p>How can vibe coding be used to effectively design products? To steal liberally from Joran Dirk Greef:</p>
+<ul>
+<li>use it to help you see the whole picture</li>
+</ul>
+<bring it back to gurumarthy>
+    </main>
+  </body>
+
+  <footer>
+    <small>&copy 2025 Benjamin Crisman | Lancaster, PA</small>
+  </footer>
+
+  
+    <script>
+  function log(message) {
+    if (true) {
+      console.log(`[web_dev_utils] ${message}`)
+    }
+  }
+  function connect() {
+    try {
+      window.socket = new WebSocket('ws://' + location.host + '/ws');
+
+      window.socket.onmessage = function(e) {
+        if (e.data === "reload") {
+          log("reloading!");
+          location.reload();
+        } else if (e.data === "subscribed") {
+          log("connected and subscribed!");
+        }
+      }
+
+      window.socket.onopen = () => {
+        waitForConnection(() => {
+          log("sending 'subscribe' message");
+          window.socket.send("subscribe")
+        }
+        , 300);
+      };
+
+      window.socket.onclose = () => {
+        setTimeout(() => connect(), 500);
+      };
+
+      function waitForConnection(callback, interval) {
+        log("waiting for connection!")
+        if (window.socket.readyState === 1) {
+          callback();
+        } else {
+          log("setting a timeout")
+          setTimeout(() => waitForConnection(callback, interval), interval);
+        }
+      }
+    } catch (e) {
+      log(e);
+      setTimeout(() => connect(), 500);
+    }
+  }
+
+  log("about to connect");
+  connect();
+</script>
+
+  
+</html>

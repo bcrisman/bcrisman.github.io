@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http_equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+      bencrisman.com
+    </title>
+
+    <link rel="stylesheet" href="/css/site.css">
+    <script src="/js/site.js"></script>
+  </head>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Ben Crisman</a></li>
+        <li><a href="/research">Research</a></li>
+        <li><a href="/teaching">Teaching</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <main>
+      <content>
+  <h1 id="teaching">Teaching</h1>
+  <h2 id="franklin-and-marshall-college">Franklin and Marshall College</h2>
+  <p><strong>GOV271: International Security</strong>, Adjunct Instructor, Spring 2024</p>
+  <p>
+    <em>
+      This course provides an introduction to the major theoretical approaches to international security. Students apply these frameworks to analyze contemporary security challenges. Topics include the causes of interstate war, the democratic peace hypothesis, terrorism and asymmetric conflict, nuclear proliferation, the role of international institutions, and emerging security threats such as climate change, cybersecurity, and AI alignment. Throughout the semester, students track three ongoing conflicts (Russia/Ukraine, Israel/Palestine, China/Taiwan) and develop skills in critical analysis through news briefings, exams, and an open-format final project designed to demonstrate their mastery of security theories and case knowledge.
+    </em>
+  </p>
+  <br>
+  <h2 id="princeton-university">Princeton University</h2>
+  <p>
+    <a href="https://politics.princeton.edu/senior-thesis-poster-session"><strong>POL938: Senior Thesis Poster Session</strong></a>, Graduate Student Coordinator, Spring 2021
+  </p>
+  <p>
+    <em>
+      In order to graduate, Politics seniors must present a professional poster describing their senior thesis research. To prepare students for this event, we provided students with informational sessions, work shops, and one-on-one consultations. While broadly focused scientific communication, these sessions covered issues related to public speaking, data visualization, and user experience (UX).
+    </em>
+  </p>
+  <p>
+    <a target="_blank" href="/content/poster-session-handout.pdf">handout</a>
+    <a href="/content/poster-session-presentation.html">slides</a>
+    No course evaluation data collected.
+  </p>
+  <br>
+  <p>
+    <a href="https://libguides.princeton.edu/vizhub"><strong>Stokes Visualization Hub</strong></a>, Data Visualization Consultant, Spring 2020, Fall 2020, Spring 2021
+  </p>
+  <p>
+    <em>
+      The Stokes Visualization Hub is a space and service that supports the interdisciplinary digital research and information visualization needs of the Princeton University community. The service is centralized in the E-classroom at Stokes Library in Wallace Hall. Stokes library staff, in collaboration with experts from other departments, work to design and teach workshops focusing on data visualization, qualitative data analysis and the digital research processes.
+    </em>
+  </p>
+  <br>
+  <p>
+    <a href="https://registrar.princeton.edu/course-offerings/course-details?term=1204&amp;courseid=010956"><strong>POL360: Social Movements and Revolution</strong></a>, Preceptor (TA), Spring 2020
+  </p>
+  <p>
+    <em>
+      This course investigates the politics of protest and revolution, examining the conditions under which protest movements emerge, their choice of tactics, the effects of repression and concessions, and the determinants of movement success. The second part of the course focuses on revolutions, examining the forms they assume and the conditions under which they develop and prove successful. Examples discussed include the civil rights, women’s and environmental movements; the French, Russian, and Iranian revolutions; the collapse of communism; and the “color revolutions,” the Arab Spring, and other waves of revolution in the contemporary world.
+    </em>
+  </p>
+  <p>
+    <a target="_blank" href="/content/teaching/TeachingEvaluationsPOL360.pdf">course feedback</a>
+    Median rating 5/5.
+  </p>
+  <br>
+  <p>
+    <a href="https://registrar.princeton.edu/course-offerings/course-details?term=1202&amp;courseid=013781"><strong>POL345: Introduction to Quantitative Social Science</strong></a>, Preceptor (TA) ×2, Fall 2019
+  </p>
+  <p>
+    <em>
+      Would universal health insurance improve the health of the poor? Do patterns of arrests in US cities show evidence of racial profiling? What accounts for who votes and their choice of candidates? This course will teach students how to address these and other social science questions by analyzing quantitative data. The course introduces basic principles of causal inference and programming skills for data analysis. The goal is to provide students with the foundation necessary to analyze data in their own research and to become critical consumers of statistical claims made in the news media, in policy reports, and in academic research.
+    </em>
+  </p>
+  <p>
+    <a target="_blank" href="/content/teaching/TeachingEvaluationsPOL345.pdf">course feedback</a>
+    Median ratings 5/5 &amp; 5/5.
+  </p>
+  <br>
+  <p>
+    <a href="https://esoc.princeton.edu/projects/executive-education-leading-evidence-based-decisions"><strong>ExecEd: Global Security, Information Processing, and Leadership</strong></a>, Teaching Fellow, Spring 2016
+  </p>
+  <p>
+    <em>
+      This course introduces participants to the core analytic principles of information processing. The principles are universally applicable to problems of extracting reliable and accurate conclusions from information and data. Second, we apply these principles to critical global security and conflict challenges. In the course of doing so, participants are also introduced to cutting edge research on security and conflict. Third, we explore leadership strategies to incorporate the information processing principles. The goal is for participants not only to master the principles themselves, but also to develop approaches that will help their home organizations deal with security and conflict information more efficiently and accurately.
+    </em>
+  </p>
+</content>
+<p></p>
+    </main>
+  </body>
+
+  <footer>
+    <small>&copy 2025 Benjamin Crisman | Lancaster, PA</small>
+  </footer>
+
+  
+    <script>
+  function log(message) {
+    if (true) {
+      console.log(`[web_dev_utils] ${message}`)
+    }
+  }
+  function connect() {
+    try {
+      window.socket = new WebSocket('ws://' + location.host + '/ws');
+
+      window.socket.onmessage = function(e) {
+        if (e.data === "reload") {
+          log("reloading!");
+          location.reload();
+        } else if (e.data === "subscribed") {
+          log("connected and subscribed!");
+        }
+      }
+
+      window.socket.onopen = () => {
+        waitForConnection(() => {
+          log("sending 'subscribe' message");
+          window.socket.send("subscribe")
+        }
+        , 300);
+      };
+
+      window.socket.onclose = () => {
+        setTimeout(() => connect(), 500);
+      };
+
+      function waitForConnection(callback, interval) {
+        log("waiting for connection!")
+        if (window.socket.readyState === 1) {
+          callback();
+        } else {
+          log("setting a timeout")
+          setTimeout(() => waitForConnection(callback, interval), interval);
+        }
+      }
+    } catch (e) {
+      log(e);
+      setTimeout(() => connect(), 500);
+    }
+  }
+
+  log("about to connect");
+  connect();
+</script>
+
+  
+</html>

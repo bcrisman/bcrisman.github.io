@@ -1,0 +1,118 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <atom:link href="http://localhost:4999/feed.xml" rel="self" type="application/rss+xml" />
+  <title>Ben Crisman</title>
+  <link>http://localhost:4999</link>
+  <description>A personal blog about civic tech.</description>
+  <language>en-us</language>
+  <generator>Tableau v0.27.0</generator>
+    <item>
+       <title>You Should Still Be Writing First.</title>
+       <link>http://localhost:4999/posts/you-should-still-be-writing-first./</link>
+       <pubDate>Wed, 03 Dec 2025 17:24:27 -04</pubDate>
+       <guid>http://localhost:4999/posts/you-should-still-be-writing-first./</guid>
+       <description><![CDATA[ <p>Several days ago on X, Madhu Gurumurthy, a product exec on the Gemini team at Google, shared that Google is moving from a 'writing-first culture' to a 'building-first' one.</p>
+<p>His argument is that, in the before times, writing was a tool to clarify one's thinking. The act of writing helped you to better understand what needed to be built before you started spending costly engineering hours on the development. Now, he claims, instead you can simply vibe code your prototype instead of writing a product requirements document (PRD).</p>
+<p>I think that <em>I</em> still need to write first.</p>
+<p>On one hand, I am a big proponent of 'learning by building' and biasing towards action. Building a prototype can be a great way to learn more about a problem domain and the potential pitfalls that you might run into down the road. It gives you better parameters for back of the envelope calculations on scale, constraints, <em>etc.</em> and gives you better insights into high-level architectural considerations that can be difficult to change down the road.</p>
+<p>However, I'm not convinced that vibe coding <em>anything</em> gives you that same level of problem knowledge unless you are <em>exceedingly</em> deliberate in how you structure your vibe coded prototypes.</p>
+<p>In order to be as deliberate as is required to run such an experiment, you -the human- needs to do some deep thinking. And the best tool I have found for that kind of deep thinking is still writing.</p>
+<br/>
+<h2><a href="#the-mechanics-of-vibe-coding" aria-hidden="true" class="anchor" id="the-mechanics-of-vibe-coding"></a>The mechanics of vibe coding</h2>
+<p>But back to vibe coding for a moment.</p>
+<p>Vibe coding is a tool for speeding up the generation of code. The 'building-first' mentality argues that because code is cheap, you should build immediately to jumpstart the feedback and product iteration cycle. After all, if it doesn't work, you can always throw it out.</p>
+<p>However, taken purely at face value, Gurumurthy's take (somewhat ironically) misses the fact that the key --and often only-- input for vibe coding is <em>prose</em>.</p>
+<p>Surely, even the staunchest vibe coding enthusiast must admit that the quality and structure of your prompt dictates the quality of the output. To vibe code effectively, you (the human) must possess a clear understanding of the problem and the potential paths toward a solution.</p>
+<p>Absent that understanding -written into human and machine interpretable prose- you are just pulling the lever on a code slot-machine.</p>
+<p>I think more worryingly, however, is that the 'build first' approach seems to propose entirely skipping out on writing as the design phase of a new project.</p>
+<br/> 
+<h2><a href="#go-slow-to-go-fast" aria-hidden="true" class="anchor" id="go-slow-to-go-fast"></a>Go slow to go fast</h2>
+<p>In one of my <a href="https://www.youtube.com/watch?v=w3WYdYyjek4">favorite conference talks ever</a>, Joran Dirk Greef discusses the TigerBeetle team's approach to designing safer systems. In it, he argues that spending more time in the design phase of a project pays off in development time and in maintenance burden down the road.</p>
+<p>His team wasn't able to start writing the code for TigerBeetle for several <em>months</em>. However, in that time, they were able to sketch out the system and its constituent parts and evaluate the constraints and bottlenecks that different architectures would introduce.</p>
+<blockquote>
+<p>If we turn to the design phase, we have opportunities to speed up because the design informs what we code and also what we don't have to code.</p>
+<p>--Joran Dirk Greef</p>
+</blockquote>
+<p>It is much easier and faster to move and alter the architecture on pen and paper than it is in code. This is the case even with vibe coding accelerating code generation and has the additional benefit of providing the developer with a global understanding of the system architecture.</p>
+<blockquote>
+<p>if we move too early out of the design phase and into coding, testing, and production, a bad design will become more and more expensive and take longer and longer to fix.</p>
+<p>--Joran Dirk Greef</p>
+</blockquote>
+<p>In other words, "go slow to go fast."</p>
+<p>The 'build-first' approach is the opposite of this paradigm: delete the design phase and go straight to building. I worry that while this approach may help you get to a local optimum much, much sooner, it puts you at risk of building the wrong thing, however quickly.</p>
+<p>Without the clarity that comes from thoughtful design, you might iterate rapidly on a solution that solves the wrong problem, or that introduces architectural constraints that become expensive to unwind later. The cost of fixing a fundamental design flaw balloons once it's embedded in code, tests, and production systems.</p>
+<br />
+<h2><a href="#if-vibe-coding-speeds-up-feedback-loops-writing-short-circuits-them" aria-hidden="true" class="anchor" id="if-vibe-coding-speeds-up-feedback-loops-writing-short-circuits-them"></a>If vibe coding speeds up feedback loops, writing short circuits them.</h2>
+<p>At the end of the day, writing remains an incredibly efficient means of developing and clarifying thoughts and of communicating with your fellow humans.</p>
+<p>I think the true merit to Gurumurthy's perspective is that vibe coding makes prototyping cheaper. But, for me, this means that it can be an effective part of the <em>design phase</em> and not just the build phase.</p>
+<p>This means that, vibe coding is an effective <em>supplement</em> to writing but by no means a replacement.</p>
+<p>You need good prose and a good understanding of the problem you're solving to vibe code anything effectively. And you need written artifacts to create the institutional memory and shared context that allow teams to move fast sustainably.</p>
+<p>There are a few areas, however, where I have found vibe coding to be particularly useful in the design process:</p>
+<ul>
+<li>Using vibe coded prototypes to help me <strong>see the whole picture.</strong> When designing systems, we often fixate on the particular pieces of the puzzle. Building something that works end-to-end can help identify unexpected challenges and bottlenecks before you commit to a full implementation.</li>
+<li>When faced with an <em>empirical</em> question about system performance, vibe coding can allow you to quickly compare potential pathways -- though it's best to keep the scope super narrow here, lest you change multiple variables at the same time by accident.</li>
+<li>Where user feedback is the primary input in the design phase, vibe coded UI/UX experiments can help put you on the right path.</li>
+</ul>
+<p>In my opinion, if you are building something worth building, regardless of advances in generative coding, writing and design should remain key tools for improving the quality and maintainability of what you build.</p> ]]></description>
+    </item>
+    <item>
+       <title>Most Data Scientists Are Unwitting Social Scientists</title>
+       <link>http://localhost:4999/posts/most-data-scientists-are-unwitting-social-scientists/</link>
+       <pubDate>Tue, 02 Jan 2024 17:24:27 -04</pubDate>
+       <guid>http://localhost:4999/posts/most-data-scientists-are-unwitting-social-scientists/</guid>
+       <description><![CDATA[ <p>The vast majority of data scientists working in the field right now are likely working on problems that affect and are affected by humans.  And humans are hard.</p>
+<p>They make for messy, complicated data from which it can be challenging to draw conclusions.
+These challenges are also entirely separate from the technical difficulties of working with data.
+Humans also make messy data due to poor database design and bad naming conventions, but those are different stories.</p>
+<p>Let's take a look at some key features of <em>homo sapiens</em> in the context of technology. Humans:</p>
+<ul>
+<li>try to game systems to their advantage.</li>
+<li>are easily distracted by phones, other humans, and changes to their environment.</li>
+<li>will bristle at being told that they might be distracted by their phones.</li>
+<li>can respond negatively to being told what to do if done too directly.</li>
+<li>will <a href="https://en.wikipedia.org/wiki/Jedi_census_phenomenon">choose responses because they are humorous</a> rather than true.</li>
+<li>will make random selections on forms to move through them faster.</li>
+<li>suffer from myriad cognitive and social biases.</li>
+</ul>
+<p>Humans are <em>hard</em>.</p>
+<p>Computer science and statistics courses, the bread and butter of traditional data science training, often (but not always) miss out on many of these human considerations. While some of these examples will show up only in the error term of our estimates, others reflect dynamics that can be incredibly important for understanding patterns that are playing out in your data, what these data reflect in the real world, and most importantly, what actions you should take related to those patterns.</p>
+<p>If the Australian Government <a href="https://en.wikipedia.org/wiki/Jedi_census_phenomenon">sees a large number of Australians declaring themselves members of the Jedi religion in a census</a>, should they, as a matter of policy, take action on their estimate? Should they allocate funding to Jedi temples to ensure the local Jedi population has adequate physical places of worship?</p>
+<p>If we design an intervention that reduces measured spam to zero, can we say that we've eliminated spam on our platform?
+Of course not!</p>
+<h3><a href="#the-disconnect" aria-hidden="true" class="anchor" id="the-disconnect"></a>The disconnect</h3>
+<p>A lot of this comes down to the disconnects between real human behavior, the data we are able to observe, and the outcomes we're trying to understand or influence. Wang <em>et al.</em> discuss these disconnects in the context of automated decisioning in their '<a href="https://predictive-optimization.cs.princeton.edu/">Against Predictive Optimization</a>'<sup class="footnote-ref"><a href="#fn-1" id="fnref-1" data-footnote-ref>1</a></sup> piece (highly recommended), but the points apply much more broadly.</p>
+<p>One of the examples they cite is that of Optum ImpactPro, a well-intended data science product that allows medical professionals to predict healthcare needs of patients. Unfortunately, the data they had on hand to proxy 'healthcare needs' was 'healthcare costs.'<sup class="footnote-ref"><a href="#fn-2" id="fnref-2" data-footnote-ref>2</a></sup> Anyone familiar with the U.S. healthcare system might be able to spot the major flaw in such a design. People with the same medical condition, and thus medical needs, will historically have had very different access to medical treatments and abilities to pay for varied medical treatments. As Obermeyer <em>et al.</em> show, this disconnect leads to meaningful racial bias in the use of that algorithm.</p>
+<p>And what if:</p>
+<ul>
+<li>we were to try to measure something even less tangible than medical needs? User happiness and interest, 'growth,'  etc.  Social concepts are extraordinarily difficult to measure and yet they are at the core of what we often are trying to measure through clicks, reactions, impressions, and the like.</li>
+<li>people try to game your fancy new search algorithm by building <a href="https://en.wikipedia.org/wiki/Link_farm">link farms</a> to up their PageRank (an example of <a href="https://en.wikipedia.org/wiki/Goodhart%27s_law">Goodhart's Law</a>)?</li>
+<li>your users know you're watching and they <a href="https://www.reddit.com/r/ProgrammerHumor/comments/bgux5b/object_object/">just want to mess with you?</a> See the <a href="https://en.wikipedia.org/wiki/Hawthorne_effect">Hawthorne Effect</a>.</li>
+<li>the early adopters of your product are massively different from the mass-market audience you're trying to reach? When might this dynamic lead to backlash when you try to adapt?<sup class="footnote-ref"><a href="#fn-3" id="fnref-3" data-footnote-ref>3</a></sup> See <a href="https://en.wikipedia.org/wiki/Social_influence">social influence</a> and <a href="https://en.wikipedia.org/wiki/Selection_bias">selection bias</a>.</li>
+</ul>
+<p>In other words, any time there is a human <em>anywhere</em> in your data generating process, you are doing social science. More to the point, social science has some answers for how to identify, mitigate, and potentially resolve some of these issues and I rarely see these solutions used or even acknowledged in data science practice.</p>
+<h3><a href="#solutions" aria-hidden="true" class="anchor" id="solutions"></a>Solutions?</h3>
+<p>I really love MIT's 'Missing Semester' course. It's a phenomenal overview of important aspects of computing that are often overlooked in the traditional computer science curriculum: how to use the shell, basic text editors, data wrangling, etc. I've recommended it to many folks over the years. What we need is a 'missing semester' for data scientists that includes some of the key social science concepts and tools: adverse selection, moral hazard, common behavioural biases, and more.</p>
+<br>
+<section class="footnotes" data-footnotes>
+<ol>
+<li id="fn-1">
+<p>Angelina Wang, Sayash Kapoor, Solon Barocas, and Arvind Narayanan. 2023. Against Predictive Optimization: On the Legitimacy of Decision-Making Algorithms that Optimize Predictive Accuracy. ACM J. Responsib. Comput. Just Accepted (December 2023). <a href="https://doi.org/10.1145/3636509">https://doi.org/10.1145/3636509</a> <a href="#fnref-1" class="footnote-backref" data-footnote-backref data-footnote-backref-idx="1" aria-label="Back to reference 1">↩</a></p>
+</li>
+<li id="fn-2">
+<p>Ziad Obermeyer <em>et al.</em>, Dissecting racial bias in an algorithm used to manage the health of populations. Science366,447-453(2019). DOI: 10.1126/science.aax2342 <a href="#fnref-2" class="footnote-backref" data-footnote-backref data-footnote-backref-idx="2" aria-label="Back to reference 2">↩</a></p>
+</li>
+<li id="fn-3">
+<p>Joshi, Y. V., Reibstein, D. J., & Zhang, Z. J. (2009). Optimal Entry Timing in Markets with Social Influence. Management Science, 55(6), 926–939. <a href="http://www.jstor.org/stable/40539270">http://www.jstor.org/stable/40539270</a> <a href="#fnref-3" class="footnote-backref" data-footnote-backref data-footnote-backref-idx="3" aria-label="Back to reference 3">↩</a></p>
+</li>
+</ol>
+</section> ]]></description>
+    </item>
+    <item>
+       <title>Identifying Coordinated Abuse in Community Rating Systems</title>
+       <link>http://localhost:4999/posts/identifying-coordinated-abuse-in-community-rating-systems/</link>
+       <pubDate>Tue, 15 Jun 2021 13:19:18 -05</pubDate>
+       <guid>http://localhost:4999/posts/identifying-coordinated-abuse-in-community-rating-systems/</guid>
+       <description><![CDATA[ <p>This page exists to redirect to <a href="/oldposts/20211506-birdwatch.html">this older post</a>.</p> ]]></description>
+    </item>
+  </channel>
+</rss>
