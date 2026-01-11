@@ -4,12 +4,21 @@
 
 Once you bootstrap and enter your project, fetch your dependencies and start the build server. The server is available at http://localhost:4999
 
+Install mise and run:
+
+```sh
+mise install
+```
+
 ```shell
 cd personal
 mix deps.get
 
 mix tableau.server
+
 ```
+
+Create new posts with `mix personal.gen.post <title>`
 
 ## Draft Posts and WIP Pages
 

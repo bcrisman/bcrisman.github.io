@@ -13,10 +13,15 @@ defmodule Personal.HomePage do
       I'm a technologist and social scientist working to improve social outcomes by building better civic technology.
     </p>
     <p>
-      I am currently a Senior Data Scientist at Beam, a civic tech startup where we are building a platform to support case management and emergency cash assistance programs. Before joining Beam, I worked in the civic tech and financial technology industries, building and scaling AI and machine learning systems.
+      I am currently Director of Research and Development at <a href="https://codeforamerica.org">Code for America </a> where we are designing and building
+      tools that can help governments reponsively, responsibly, and efficiently deliver better public services. Before joining Code for America, I worked in the civic tech and
+      financial technology industries, building and scaling AI and machine learning systems.
     </p>
     <p>
       Earlier in my career, I trained as a quantitative social scientist at Princeton University, worked at a think tank, and consulted for organizations like the UN and the World Bank on issues related to Fragility, Conflict, and Violence.
+    </p>
+    <p>
+    <small>technology 🤝 social science 🤝 better world</small>
     </p>
     <br />
 
