@@ -72,7 +72,7 @@ actions here at home, the news has been heavy.
 
 All of this comes on the back of a challenging year for many Americans and people around the world.
 Food insecurity is rising. Homelessness is rising. And the funding and institutions meant to meet
-those challenges is being gutted.
+those challenges are being gutted.
 
 But despite these challenges, the perspective I'm trying to bring to this new role and this new year
 is one of possibility. Just like in my morning game, it is easy to look at the board, see the obstacles,
